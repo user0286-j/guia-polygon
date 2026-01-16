@@ -1,0 +1,10 @@
+site_name: Testlib
+
+nav:
+  - Inicio: index.md
+  - Testlib:
+    - Inicio: index2.md
+    - Validator: validator.md
+  - Polygon: polygon.md
+  - About: about.md
+
