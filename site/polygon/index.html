@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Polygon - Testlib</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Testlib</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Testlib</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../index2/" class="dropdown-item">Inicio</a>
+</li>
+                                    
+<li>
+    <a href="../validator/" class="dropdown-item">Validator</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Polygon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../about/" class="nav-link">About</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../validator/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../about/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#codeforces-polygon" class="nav-link">Codeforces Polygon</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#prerrequisito" class="nav-link">Prerrequisito</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#paso-1-crear-el-problema" class="nav-link">Paso 1: Crear el problema</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#paso-2-crear-descripcion-y-anadir-imagenes" class="nav-link">Paso 2: Crear descripción y añadir imágenes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#paso-3-crear-el-validator" class="nav-link">Paso 3: Crear el validator</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#paso-4-checker" class="nav-link">Paso 4: Checker</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#paso-5-anadir-los-casos-de-prueba" class="nav-link">Paso 5: Añadir los casos de prueba</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#paso-6-anadir-codigo-solucion" class="nav-link">Paso 6: Añadir código solución.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#paso-7-verificar-funcionamiento-del-problema" class="nav-link">Paso 7: Verificar funcionamiento del problema</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#paso-8-permisos" class="nav-link">Paso 8: Permisos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#paso-9-publicacion" class="nav-link">Paso 9: Publicación</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#paso-10-disfruta" class="nav-link">Paso 10: disfruta</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="codeforces-polygon">Codeforces Polygon</h1>
+<p>Para subir los problemas a codeforces, se utiliza la siguiente plataforma [https://polygon.codeforces.com/].</p>
+<p>Es en ahí donde se hará los problemas, aquí se hará un pequeño tutorial sobre cómo crear un problema y subir a codeforces</p>
+<h2 id="prerrequisito">Prerrequisito</h2>
+<ul>
+<li>Tener una cuenta de polygon, se crea haciendo click en <code>register</code>.</li>
+<li>Tener algo de paciencia ya que puede que te bote de la sesión y nuevamente tienes que iniciar.</li>
+</ul>
+<h2 id="paso-1-crear-el-problema">Paso 1: Crear el problema</h2>
+<p>Una vez iniciado sesión, se mostrará la siguiente pantalla</p>
+<p><img alt="Screenshot" src="../img/image.png" /></p>
+<p>Busca la parte que dice <code>New problem</code> y te mostrará la siguiente pantall en la que debes introducir el nombre del problema. en este caso es la edición del Cuscontest más la letra del problema.</p>
+<p><img alt="Screenshot" src="../img/image%20copy.png" /></p>
+<p>Una vez creado te saldrá el siguiente contenido</p>
+<p><img alt="Screenshot" src="../img/image%20copy%202.png" /></p>
+<p>A la cual, se debes dar click en <code>start</code>.</p>
+<h2 id="paso-2-crear-descripcion-y-anadir-imagenes">Paso 2: Crear descripción y añadir imágenes</h2>
+<p>Dentro del problema, la primera sesión que te mostrará es <code>General info</code>.</p>
+<p>Donde en ahí se indica cuántos milisegundos debe tardar el algoritmo en ejecutarse como máximo y también cuánta memoria debe usar el algoritmo.</p>
+<p><img alt="Screenshot" src="../img/image%20copy%203.png" /></p>
+<p>Luego en la sección <code>Statement</code></p>
+<p>Seleccionas el idioma del problema (Puedes seleccionar Inglés si es necesario).</p>
+<p><img alt="Screenshot" src="../img/image%20copy%204.png" /></p>
+<p>Una vez ya declarado el idioma, te mostrará el siguiente contenido</p>
+<p><img alt="Screenshot" src="../img/image%20copy%205.png" /></p>
+<p>Donde Pones el título del problema (Sin la letra del problema),</p>
+<p>También la descripción del problema, como el input, output, notes. Se puede copiar el contenido del problema original del formato del Cuscontest pero en caso se necesite modificar, se va a hacer.</p>
+<p>En caso que sea con imagen, al final de la página está para añadir contenido de imagen y luego solo se añade la ruta de la imagen para que pueda ser visualizado.</p>
+<p>Una vez hecho lo puedes poner en guardar o save, si quieres ver cómo está quedando en la opción <code>Review</code> lo puedes revisar</p>
+<p><img alt="Screenshot" src="../img/image%20copy%206.png" /></p>
+<p>Como se ve en la imagen, hay cosas que se debe modificar o arreglar.</p>
+<h2 id="paso-3-crear-el-validator">Paso 3: Crear el validator</h2>
+<p>Ahora hecho esto, puedes dirigirte a la sección <code>Files</code>.</p>
+<p><img alt="Screenshot" src="../img/image%20copy%207.png" /></p>
+<p>Dentro de ahí, puedes añadir archivos necesarios, en este caso, en new file, creas el siguiente archivo <code>v.cpp</code> y haz click en <em>create File</em>.</p>
+<p><img alt="Screenshot" src="../img/image%20copy%208.png" /></p>
+<p>Dentro de ahí haces el código para el validator y una vez hecho el validator para el problema, lo pones en save.</p>
+<p>En la sección <code>Validator</code></p>
+<p>Seleccionas el validator que hemos creado, en este caso <code>v.cpp</code>.</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2010.png" /></p>
+<p>Para verificar si todo está correcto en esa misma sección puedes crear casos de prueba para verificar si el validator está funcionando correctamente.</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2011.png" /></p>
+<p>Una vez creado los casos de prueba indicando si debería validar o no (con 1 o 0 respectivamente). Puedes ejecutar los casos de prueba y esperar a que salgan los resultados (siempre refreshea la página)</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2012.png" /></p>
+<p>Una vez con los resultados, revisado si es el resultado esperado</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2013.png" /></p>
+<h2 id="paso-4-checker">Paso 4: Checker</h2>
+<p>En la sección <code>Cheker</code>. Sirve para verificar la respuesta del output. en caso que el problema requiera múltiples respuestas, es decir, que acepta varias formas, se crea un checker para ello, caso contrario, solo pones el formato <code>lcmp</code>.</p>
+<p><img alt="Screenshot" src="../img/image%20copy%209.png" /></p>
+<h2 id="paso-5-anadir-los-casos-de-prueba">Paso 5: Añadir los casos de prueba</h2>
+<p>En la sección de <code>Test</code> es donde se pondrá los casos de prueba.</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2014.png" /></p>
+<p>Puedes añadir los casos de prueba manualmente, pero si tienes los casos de prueba <code>in</code> entonces lo puedes añadir usando el siguiente enlace, <em>from the archive</em>. Y seleccionas el archivo.</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2017.png" /></p>
+<p>El formato del archivo es que sea formato zip y que solo contando los casos de entrada, en linux se usa comandos para hacer eso.</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2015.png" /></p>
+<p>Una vez hecho el zip y se añada los casos de prueba se mostrará de la siguiente forma.</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2016.png" /></p>
+<p>Para seleccionar los casos de prueba, los casilleros en cada problema seleccionamos los casos que se mostrará al público y abajo en la esquina inferior derecho haz click en <code>example</code> Y lo actualizas.</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2021.png" /></p>
+<h2 id="paso-6-anadir-codigo-solucion">Paso 6: Añadir código solución.</h2>
+<p>En la sección <code>Solution files</code> en dónde se pondrá los códigos solución, fuerza bruta, o errónea.</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2018.png" /></p>
+<p>En <code>New file</code> Escribes el nombre del código solución. Una vez creado añades el código del problema solución.</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2019.png" /></p>
+<p>Y lo pones en crear.</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2020.png" /></p>
+<p>En caso sea necesario crear un código de fuerza bruta para estar seguro lo puedes crear y seleccionas el tipo de código como <code>Time limit exceed</code>.</p>
+<h2 id="paso-7-verificar-funcionamiento-del-problema">Paso 7: Verificar funcionamiento del problema</h2>
+<p>Para ver si todo está funcionando correctamente, puedes regresar a <code>review</code> y ver cómo está quedando el problema.</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2022.png" /></p>
+<p>Una vez verificado todo el problema, abajo de todo ahí un enlace llamado <code>commit change</code>, Al hacer click, te saldrá la siguiente pantalla</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2023.png" /></p>
+<p>Una vez hecho puedes hacer la verificación del siguiente cuadro</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2024.png" /></p>
+<p>Haces en click en <code>run</code> a lado de Verification, debe aparecer running.</p>
+<p>Una vez hecho eso en <code>invocations</code> te mostrará cómo está saliendo la verifcación (En caso no salga nada, solo es reinicar la página hasta que aparezca)</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2025.png" /></p>
+<p>Dentro puedes ver el estado de cada caso de prueba y cuánto está ejecuntándose</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2026.png" /></p>
+<p>Una vez finalizado se verá de la siguiente forma</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2027.png" /></p>
+<h2 id="paso-8-permisos">Paso 8: Permisos</h2>
+<p>Una vez hecho todo los pasos anteriores, En la sección de  <code>Manage Access</code> te mostrará quienes tiene permiso a tu problema.</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2028.png" /></p>
+<p>Añade usuarios, principalmente <code>codeforces</code> para que el juez pueda agarrar el problema. </p>
+<p><img alt="Screenshot" src="../img/image%20copy%2029.png" /></p>
+<p>Para en el caso del cuscontest también debes añadir a la persona encargado de los problemas para que al final lo suba, por ejemplo <code>user0286</code> en caso del cuscontest.</p>
+<p>Una vez hecho, se mostrará de la siguiente forma.</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2030.png" /></p>
+<h2 id="paso-9-publicacion">Paso 9: Publicación</h2>
+<p>Para finalizar, en la sección <code>Packages</code> creas un páquete (Create package: Standard). Y una vez hecho, te deberá aparecer el siguiente contenido</p>
+<p><img alt="Screenshot" src="../img/image%20copy%2031.png" /></p>
+<h2 id="paso-10-disfruta">Paso 10: disfruta</h2>
+<p>Disfruta, en codeforces puedes ir a Gym y en ahí el link que se generó lo copias y debería mostrar tu problema y listo para ser usado para un concurso.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
